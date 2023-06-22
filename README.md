@@ -19,12 +19,11 @@ csv_converter
 
 ## 使用方法
 1. 'map.csv'を作成します。このCSVファイルでは、最初の行に新しいカラム名を、2行目には元のCSVの対応するカラムのインデックスを指定します。
-変換後のcsvで値を空にしたいカラムは「NaN」を指定します。
 以下はmap.csvの例です。
 
 ```csv
 new_col_1,new_col_2,new_col_3,new_col_4,new_col_5
-NaN,0,1,NaN,2
+,0,1,,2
 ```
 
 この例では、新しいCSVのnew_col_2に元のCSVの1番目のカラム、new_col_3に元のCSVの2番目のカラム、new_col_5に元のCSVの3番目のカラムを設定します。
